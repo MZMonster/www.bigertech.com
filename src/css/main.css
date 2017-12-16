@@ -4,6 +4,7 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -14,10 +15,17 @@ html {
     line-height: 1.4;
 }
 
-body{
+body {
     margin: 0;
-    font-family: "PingFangSC","Helvetica Neue","Open Sans","Microsoft YaHei","微软雅黑","Hiragino Sans GB","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
+    font-family: "PingFangSC", "Helvetica Neue", "Open Sans", "Microsoft YaHei", "微软雅黑", "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -33,6 +41,7 @@ body{
     text-shadow: none;
 }
 
+
 /*
  * A better looking default horizontal rule
  */
@@ -45,6 +54,7 @@ hr {
     margin: 1em 0;
     padding: 0;
 }
+
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -61,6 +71,7 @@ video {
     vertical-align: middle;
 }
 
+
 /*
  * Remove default fieldset styles.
  */
@@ -71,6 +82,7 @@ fieldset {
     padding: 0;
 }
 
+
 /*
  * Allow only vertical resizing of textareas.
  */
@@ -78,6 +90,7 @@ fieldset {
 textarea {
     resize: vertical;
 }
+
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -90,137 +103,186 @@ textarea {
     padding: 0.2em 0;
 }
 
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-.header{
+
+.header {
     background: #fff url(../img/bg.jpg) no-repeat fixed top;
     display: flex;
-    justify-content:center;
-    align-items:center;
-    height: 500px;
-}
-
-   .header .btn{
-    	width: 188px;
-    	height: 42px;
-        background-color: #f0415f;
-        	font-family: SourceHanSansCN;
-        	font-size: 17px;
-        	font-weight: 900;
-        	line-height: 2.94;
-        	letter-spacing: 1.7px;
-        	text-align: center;
-        	color: #ffffff;
-
-}
-
-.container{
-    width: 80%;
-    margin: 0 auto;
-}
-    .section1 {
-    display: flex;
-    justify-content: space-between;
-
+    justify-content: center;
     align-items: center;
     height: 500px;
 }
 
-.section1 .title{
-	font-size: 23px;
-	font-weight: 600;
-	line-height: 1.43;
-	text-align: left;
-	color: #2c2e37;
+.header .btn {
+    width: 188px;
+    height: 42px;
+    background-color: #f0415f;
+    font-family: SourceHanSansCN;
+    font-size: 17px;
+    font-weight: 900;
+    line-height: 2.94;
+    letter-spacing: 1.7px;
+    text-align: center;
+    color: #ffffff;
 }
-    .section1 .desc {
-	width: 517px;
-	height: 66px;
-	font-size: 14px;
-	line-height: 1.86;
-	text-align: left;
-	color: #949494;
 
-    }
-.section1 .btn{
-	font-size: 12px;
-	line-height: 3.56;
-	letter-spacing: 2.4px;
-	text-align: center;
+.container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    word-break: break-all;
+    margin-right: 100px;
+}
+.line-text {
+    text-transform:uppercase;
+    font-size: 12px;
+    writing-mode: vertical-rl;
+    transform:  rotate(180deg)
+
+}
+
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 109px 0;
+}
+
+.section1 .title {
+    font-size: 23px;
+    font-weight: 600;
+    line-height: 1.43;
+    text-align: left;
+    color: #2c2e37;
+}
+
+.section1 .desc {
+    width: 517px;
+    height: 66px;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: left;
+    color: #949494;
+}
+
+.section1 .btn {
+    font-size: 12px;
+    line-height: 3.56;
+    letter-spacing: 2.4px;
+    text-align: center;
     background-color: #f0415f;
     color: #fff;
     width: 130px;
     height: 40px;
-
 }
 
+.blog .icon {
+    margin-bottom: 20px;
+    width: 40px;
+    height: 40px;
+}
 
+.blog .icon-a {
+    border: solid 3px #f0415f;
+}
 
-.section2 .blog{
+.blog .icon-b {
+    border: solid 3px #f0415f;
+    border-radius: 50%;
+}
+
+.blog .icon-c {}
+
+.icon-c img {
+    width: 100%;
+    height: 100%;
+}
+
+.section2 {
+    padding: 9px 0 94px 0;
+}
+
+.section2 .blog {
     display: flex;
-    justify-content:space-between;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
     padding: 25px 0;
 }
 
 .section2 .blog .left {
     width: 458px;
 }
+
 .section2 .blog .left .title {
-    	font-size: 20px;
-    	font-weight: 600;
-    	line-height: 2.14;
-    	text-align: left;
-    	color: #2c2e37;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2.14;
+    text-align: left;
+    color: #2c2e37;
 }
 
 .section2 .blog .left .desc {
-	font-size: 14px;
-	line-height: 1.86;
-	text-align: left;
-	color: #949494;
+    font-size: 14px;
+    line-height: 1.86;
+    text-align: left;
+    color: #949494;
 }
 
-.blog .right img{
+.blog .right img {
     width: 570px;
     height: 350px;
 }
 
-
-.footer{
-    	background-color: #323232;
-
+.footer {
+    background-color: #323232;
 }
-
-.footer .btn{
-    	width: 158px;
-    	height: 40px;
-
-    	font-size: 14px;
-    	font-weight: 600;
-    	line-height: 2.86;
-    	text-align: center;
-        color: #ffffff;
-        background-color: #f0415f;
-}
-.footer .media a{
-    	font-size: 14px;
-    	line-height: 2.86;
-    	text-align: left;
-        color: #ffffff;
-        text-decoration: none;
-
-}
-
 .footer .container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.footer .logo img{
+    width: 15px;
+    height: 15px;
+}
+.footer .btn {
+    width: 158px;
+    height: 40px;
+    margin-right: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 2.86;
+    text-align: center;
+    color: #ffffff;
+    background-color: #f0415f;
+}
+
+.footer .media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .media a {
+    padding: 0 15px;
+    font-size: 14px;
+    line-height: 2.86;
+    text-align: left;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 25px 0;
 }
 
-.footer .copyright{
+.footer .copyright {
     width: 418px;
     opacity: 0.4;
     font-size: 12px;
@@ -231,17 +293,10 @@ textarea {
 
 
 
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
 
 /*
  * Hide visually and from screen readers
@@ -250,6 +305,7 @@ textarea {
 .hidden {
     display: none !important;
 }
+
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -270,8 +326,10 @@ textarea {
     padding: 0;
     position: absolute;
     width: 1px;
-    white-space: nowrap; /* 1 */
+    white-space: nowrap;
+    /* 1 */
 }
+
 
 /*
  * Extends the .visuallyhidden class to allow the element
@@ -291,6 +349,7 @@ textarea {
     white-space: inherit;
 }
 
+
 /*
  * Hide visually and from screen readers, but maintain layout
  */
@@ -298,6 +357,14 @@ textarea {
 .invisible {
     visibility: hidden;
 }
+.wrap {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
 
 /*
  * Clearfix: contain floats
@@ -313,13 +380,16 @@ textarea {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
 }
 
 .clearfix:after {
     clear: both;
 }
+
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -330,12 +400,20 @@ textarea {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
+@media only screen and (max-width: 768px) {
+    .header{
+        height: 300px;
+    }
+
+    /* Style adjustments for viewports that meet the condition */
+}
 
 @media print,
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
+
 
 /* ==========================================================================
    Print styles.
@@ -348,35 +426,30 @@ textarea {
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important; /* Black prints faster:
+        color: #000 !important;
+        /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre {
         white-space: pre-wrap !important;
     }
@@ -385,28 +458,23 @@ textarea {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
-
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;
