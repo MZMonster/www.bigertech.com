@@ -14,6 +14,10 @@ html {
     line-height: 1.4;
 }
 
+body{
+    margin: 0;
+    font-family: "PingFangSC","Helvetica Neue","Open Sans","Microsoft YaHei","微软雅黑","Hiragino Sans GB","STHeiti","WenQuanYi Micro Hei",SimSun,sans-serif;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -89,12 +93,70 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+.header{
+    background: #fff url(../img/bg.jpg) no-repeat fixed top;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 500px;
+}
 
+   .header .btn{
+    	width: 188px;
+    	height: 42px;
+        background-color: #f0415f;
+        	font-family: SourceHanSansCN;
+        	font-size: 17px;
+        	font-weight: 900;
+        	line-height: 2.94;
+        	letter-spacing: 1.7px;
+        	text-align: center;
+        	color: #ffffff;
+
+}
 
 .container{
     width: 80%;
     margin: 0 auto;
 }
+    .section1 {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+    height: 500px;
+}
+
+.section1 .title{
+	font-size: 23px;
+	font-weight: 600;
+	line-height: 1.43;
+	text-align: left;
+	color: #2c2e37;
+}
+    .section1 .desc {
+	width: 517px;
+	height: 66px;
+	font-size: 14px;
+	line-height: 1.86;
+	text-align: left;
+	color: #949494;
+
+    }
+.section1 .btn{
+	font-size: 12px;
+	line-height: 3.56;
+	letter-spacing: 2.4px;
+	text-align: center;
+    background-color: #f0415f;
+    color: #fff;
+    width: 130px;
+    height: 40px;
+
+}
+
+
+
 .section2 .blog{
     display: flex;
     justify-content:space-between;
@@ -143,7 +205,6 @@ textarea {
         background-color: #f0415f;
 }
 .footer .media a{
-    	font-family: Adobe Heiti Std R;
     	font-size: 14px;
     	line-height: 2.86;
     	text-align: left;
