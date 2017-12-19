@@ -107,7 +107,11 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
+img.logo{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
 .header {
     background: #fff url(../img/bg.png) no-repeat fixed top;
     display: flex;
@@ -174,6 +178,7 @@ textarea {
     width: 40px;
     height: 40px;
 }
+
 
 .blog .icon-a {
     border: solid 3px #f0415f;
@@ -273,6 +278,10 @@ textarea {
     line-height: 2.08;
     text-align: left;
     color: rgba(255, 255, 255, 0.4);
+}
+.copyright p{
+    margin: 0;
+    padding: 0;
 }
 /* ==========================================================================
    Helper classes
