@@ -438,12 +438,12 @@ img.logo{
     text-align: center;
 }
 
-.blog img{
-    width: 100%;
+.blog .right img{
+    max-width: 100%;
     height: auto;
 }
 .blog .desc{
-        width: 90%;
+    width: 90%;
 }
 
 .footer .container{
