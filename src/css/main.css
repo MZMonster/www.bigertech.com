@@ -114,6 +114,7 @@ img.logo{
 }
 .header {
     background: #fff url(../img/bg.png) no-repeat fixed top;
+    background-size:contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -397,6 +398,7 @@ img.logo{
     .header{
         height: 100vh;
         width: 100%;
+        background-size: cover;
     }
     .container,
     .wrap{
