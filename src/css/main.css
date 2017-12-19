@@ -159,7 +159,7 @@ img.logo{
     height: 66px;
     font-size: 14px;
     line-height: 1.86;
-    text-align: left;
+    text-align:left;
     color: #949494;
 }
 
@@ -396,7 +396,7 @@ img.logo{
         overflow-x: hidden
     }
     .header{
-        height: 100vh;
+        height: 800px;
         width: 100%;
         background-size: cover;
     }
@@ -431,7 +431,7 @@ img.logo{
 
 }
 .section2 .blog .left{
-    width:auto;
+    width: 90%;
 }
 .icon{
     margin: 60px auto;
@@ -453,7 +453,6 @@ img.logo{
 }
 .blog .desc{
     padding-top: 35px;
-    width: 90%;
 }
 
 .blog .right img{
