@@ -170,6 +170,7 @@ img.logo{
     -ms-flex-align: center;
     align-items: center;
     padding: 109px 0;
+
 }
 
 .section1 .title {
@@ -462,7 +463,10 @@ img.logo{
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 120px 0;
+    padding: 120px 0 60px;
+}
+.section1 .btn{
+    margin-top: 60px;
 }
 .section1 .title{
     text-align : center;

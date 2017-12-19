@@ -144,6 +144,7 @@ img.logo{
     justify-content: space-between;
     align-items: center;
     padding: 109px 0;
+
 }
 
 .section1 .title {
@@ -409,7 +410,10 @@ img.logo{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 120px 0;
+    padding: 120px 0 60px;
+}
+.section1 .btn{
+    margin-top: 60px;
 }
 .section1 .title{
     text-align : center;
