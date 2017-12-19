@@ -436,6 +436,10 @@ img.logo{
     /* Style adjustments for viewports that meet the condition */
 }
 @media only screen and (max-width: 667px) {
+    body{
+        width: 100%;
+        overflow-x: hidden
+    }
     .header{
         height: 100vh;
         width: 100%;
@@ -466,6 +470,7 @@ img.logo{
 .section1 .desc{
     padding:29px 20px 60px;
     width: 90%;
+    margin: 0 auto;
 }
 .section2{
     padding: 0;
@@ -485,6 +490,13 @@ img.logo{
 .icon{
     margin: 60px auto;
 }
+.section2 .blog .left .title{
+	font-weight: 600;
+	line-height: 1.07;
+	text-align: center;
+    color: #2c2e37;
+}
+
 .section2 .blog .left .desc{
     margin: 0 auto;
 }
@@ -493,13 +505,14 @@ img.logo{
 .blog{
     text-align: center;
 }
+.blog .desc{
+    padding-top: 35px;
+    width: 90%;
+}
 
 .blog .right img{
     max-width: 100%;
     height: auto;
-}
-.blog .desc{
-    width: 90%;
 }
 
 .footer .container{
