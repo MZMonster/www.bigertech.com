@@ -17,7 +17,7 @@ html {
 
 body {
     margin: 0;
-    font-family: "PingFangSC", "Helvetica Neue", "Open Sans", "Microsoft YaHei", "微软雅黑", "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
+    font-family: "PingFangSC-Regular", "Helvetica Neue", "Open Sans", "Microsoft YaHei", "微软雅黑", "Hiragino Sans GB", "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif;
 }
 
 a,
@@ -109,7 +109,7 @@ textarea {
    ========================================================================== */
 
 .header {
-    background: #fff url(../img/bg.jpg) no-repeat fixed top;
+    background: #fff url(../img/bg.png) no-repeat fixed top;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,16 +117,14 @@ textarea {
 }
 
 .header .btn {
-    width: 188px;
-    height: 42px;
-    background-color: #f0415f;
-    font-family: SourceHanSansCN;
-    font-size: 17px;
-    font-weight: 900;
-    line-height: 2.94;
-    letter-spacing: 1.7px;
-    text-align: center;
+	font-size: 17px;
+	font-weight: 900;
+	line-height: 2.94;
+	letter-spacing: 1.7px;
+	text-align: center;
     color: #ffffff;
+    width: 188px;
+    background-color: #f0415f;
 }
 
 .container1{
@@ -134,14 +132,6 @@ textarea {
     flex-direction: column;
     justify-content: center;
     word-break: break-all;
-    margin-right: 100px;
-}
-.line-text {
-    text-transform:uppercase;
-    font-size: 12px;
-    writing-mode: vertical-rl;
-    transform:  rotate(180deg)
-
 }
 
 .section1 {
@@ -194,8 +184,6 @@ textarea {
     border-radius: 50%;
 }
 
-.blog .icon-c {}
-
 .icon-c img {
     width: 100%;
     height: 100%;
@@ -239,14 +227,10 @@ textarea {
 .footer {
     background-color: #323232;
 }
-.footer .container{
-    width: 80%;
-    margin: 0 auto;
-}
 
 .footer .logo img{
-    width: 15px;
-    height: 15px;
+    /* width: 15px;
+    height: 15px; */
 }
 .footer .btn {
     width: 158px;
@@ -290,9 +274,6 @@ textarea {
     text-align: left;
     color: rgba(255, 255, 255, 0.4);
 }
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -357,13 +338,12 @@ textarea {
 .invisible {
     visibility: hidden;
 }
-.wrap {
-    display: flex;
-    justify-content: flex-end;
-    width: 80%;
-    margin: 0 auto;
+.container,.wrap {
 
+    width: 1140px;
+    margin: 0 auto;
 }
+
 
 
 /*
@@ -400,10 +380,104 @@ textarea {
 @media only screen and (min-width: 35em) {
     /* Style adjustments for viewports that meet the condition */
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 667px) {
     .header{
-        height: 300px;
+        height: 100vh;
+        width: 100%;
     }
+    .container,
+    .wrap{
+        width: 100%;
+    }
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 0;
+}
+.section1 .title{
+    text-align : center;
+}
+
+
+.section1 .desc{
+    padding:29px 20px 60px;
+    width: 90%;
+}
+.section2{
+    padding: 0;
+    margin: 0 auto;
+}
+
+.section2 .blog{
+    flex-direction: column-reverse;
+
+}
+.section2 .blog .left{
+    width:auto;
+}
+.icon{
+    margin: 60px auto;
+}
+.section2 .blog .left .desc{
+    margin: 0 auto;
+}
+
+
+.blog{
+    text-align: center;
+}
+
+.blog img{
+    width: 100%;
+    height: auto;
+}
+.blog .desc{
+        width: 90%;
+}
+
+.footer .container{
+    flex-direction: column;
+    align-items: left;
+    padding: 0 40px;
+}
+.footer .logo img{
+    padding: 120px 0;
+}
+.footer .btn{
+width: 158px;
+height: 40px;
+margin-right: 20px;
+font-size: 14px;
+font-weight: 600;
+line-height: 2.86;
+text-align: center;
+color: #ffffff;
+background-color: #f0415f;
+margin-bottom: 48px;
+}
+
+.footer .media{
+    display: inline;
+
+}
+.footer .media a{
+    margin-left:-15px;
+}
+
+    .footer .copyright {
+
+	opacity: 0.4;
+	font-family: PingFangSC;
+	line-height: 2.08;
+	text-align: left;
+	color: rgba(255, 255, 255, 0.4);
+
+}
+
+
+
 
     /* Style adjustments for viewports that meet the condition */
 }
