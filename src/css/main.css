@@ -113,7 +113,7 @@ img.logo{
     top: 40px;
 }
 .header {
-    background: #fff url(../img/bg.png) no-repeat fixed top;
+    background: #fff url(../img/bg.jpg) no-repeat fixed top;
         background-size: cover;
     display: flex;
     justify-content: center;
