@@ -114,7 +114,7 @@ img.logo{
 }
 .header {
     background: #fff url(../img/bg.png) no-repeat fixed top;
-    background-size:contain;
+        background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -396,9 +396,8 @@ img.logo{
         overflow-x: hidden
     }
     .header{
-        height: 800px;
+        height: 100vh;
         width: 100%;
-        background-size: cover;
     }
     .container,
     .wrap{
@@ -494,17 +493,20 @@ margin-bottom: 45px;
 }
 .footer .media a{
     margin-left:-15px;
+    padding-right: 50px;
+    font-weight: bold;
 }
 
-    .footer .copyright {
-    width: 608px;
+.footer .copyright {
 	opacity: 0.4;
 	font-family: PingFangSC;
 	line-height: 2.08;
 	text-align: left;
     color: rgba(255, 255, 255, 0.4);
     padding-bottom: 60px;
-
+}
+.footer .copyright div{
+    width: 90%;
 }
 
 
