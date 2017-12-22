@@ -328,6 +328,16 @@ img.logo{
     margin: 0;
     padding: 0;
 }
+.copyright .c1,
+.copyright .c2{
+    float: left;
+}
+.copyright .c3{
+    clear: both;
+}
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -562,14 +572,17 @@ margin-bottom: 15px;
 .footer .copyright {
 	opacity: 0.4;
 	font-family: PingFangSC;
-	line-height: 2.08;
+	line-height: 1.7;
 	text-align: left;
     color: rgba(255, 255, 255, 0.4);
     padding-bottom: 20px;
 }
 .footer .copyright div{
-    padding:  0 0 20px;
     width: 60%;
+}
+
+.footer .copyright div:last-child{
+    padding-top:20px;
 }
 
 
