@@ -285,11 +285,14 @@ img.logo{
     padding: 0;
 }
 .copyright .c1,
-.copyright .c2{
+.copyright .c2,
+.copyright .c4 {
+
     float: left;
 }
 .copyright .c3{
-    clear: both;
+    clear: left;
+    float: left;
 }
 
 
@@ -520,7 +523,7 @@ margin-bottom: 15px;
 .footer .copyright div {
     width: 60%;
 }
-.footer .copyright div:last-child{
+.footer .copyright div.c3{
     padding-top:20px;
 }
 
