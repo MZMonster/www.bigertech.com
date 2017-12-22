@@ -514,11 +514,9 @@ margin-bottom: 15px;
 	line-height: 1.7;
 	text-align: left;
     color: rgba(255, 255, 255, 0.4);
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
-.footer .copyright div{
-    width: 60%;
-}
+
 
 .footer .copyright div:last-child{
     padding-top:20px;
