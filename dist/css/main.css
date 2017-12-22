@@ -531,7 +531,7 @@ margin: -25px auto 0;
     -webkit-box-align: left;
     -ms-flex-align: left;
     align-items: left;
-    padding: 0 40px;
+    padding: 0 20px;
 }
 .footer .logo img{
     padding: 60px 0;
@@ -555,8 +555,8 @@ margin-bottom: 15px;
 
 }
 .footer .media a{
-    margin-left:-15px;
-    padding-right: 33px;
+    margin-left:-10px;
+    padding-right: 25px;
 }
 
 .footer .copyright {
@@ -565,10 +565,11 @@ margin-bottom: 15px;
 	line-height: 2.08;
 	text-align: left;
     color: rgba(255, 255, 255, 0.4);
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
 .footer .copyright div{
-    width: 90%;
+    padding:  0 0 20px;
+    width: 60%;
 }
 
 
